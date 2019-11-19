@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script>
+		//函数demo
+		//判断一个数是否是素数（质数）
+		function isZhiSu(num){
+			for(var i=2;i<num;i++){
+				if(num%i==0){
+					return false;
+				}
+			}
+			return true;
+		}
+		//console.log(isZhiSu(11));
+	//	不借助第三方变量交换两个数的值 要求必须是数字！
+	function exchangeValue(a,b){
+		console.log('交换前：'+a+','+b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		console.log('交换后：'+a+','+b);
+	}
+	exchangeValue(5,9);
+	</script>
+</body>
+</html>
